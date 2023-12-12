@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Puppy Weight Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Puppy Weight Calculator</h1>
+
+  <form id="puppyWeightForm">
+    <label for="breedSize">Breed Size:</label>
+    <select id="breedSize" required>
+      <option value="small">Small (Toy, Miniature)</option>
+      <option value="medium">Medium (Standard)</option>
+      <option value="large">Large (Giant)</option>
+    </select>
+    <br>
+
+    <label for="initialWeight">Initial Weight (lbs):</label>
+    <input type="number" id="initialWeight" required>
+    <br>
+
+    <label for="age">Age (weeks):</label>
+    <input type="number" id="age" required>
+    <br>
+
+    <button type="button" onclick="calculateWeight()">Calculate</button>
+  </form>
+
+  <div id="result"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
