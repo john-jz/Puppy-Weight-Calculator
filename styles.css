@@ -1,16 +1,64 @@
 /* styles.css */
 
+/* Body styles */
 body {
-  font-family: 'Arial', sans-serif;
-  text-align: center;
-  margin: 20px;
+  font-family: 'Roboto', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #d0ece4;
+  color: #161944;
 }
 
+/* Header styles */
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Form styles */
 form {
   max-width: 400px;
   margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-input, select, button {
-  margin-bottom: 10px;
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #161944;
+}
+
+input[type="number"],
+select {
+  width: calc(100% - 6px);
+  padding: 8px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+button {
+  display: block;
+  font-family: 'Roboto';
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #161944;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2c2f6b;
+}
+
+/* Result styles */
+#result {
+  margin-top: 20px;
+  text-align: center;
 }
