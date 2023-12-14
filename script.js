@@ -27,19 +27,19 @@ function calculateWeight() {
     }
 
     // Prevent Zero or Negative Logic Error
-    if (initialWeight > 0.00 && age > 0.00) {
+    if (initialWeight > 0.00 && age >= 0.00) {
       // Calculate estimated weight
       const estimatedWeight = initialWeight + growthRate * age;
 
       // Display the result
       const resultDiv = document.getElementById('result');
-      resultDiv.innerHTML = `<p>Estimated Weight at ${age} weeks: ${estimatedWeight.toFixed(2)} lbs</p>`;
+      resultDiv.innerHTML = `<p>Estimated Weight at ${age} weeks: <b>${estimatedWeight.toFixed(2)} lbs</p></b>`;
     }
     
     // Report Zero or Negative Logic Error
   else {    
     const resultDiv = document.getElementById('result');
-    resultDiv.innerHTML = "<p>Can't have negative weight or age nor zero weight ;)</p>";
+    resultDiv.innerHTML = "<p>Can't have negative weight or age nor zero weight 🐶</p>";
   }
   }
 }
